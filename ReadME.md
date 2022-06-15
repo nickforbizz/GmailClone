@@ -6,6 +6,6 @@
 - [x] AppBar Menu
 - [x] Drawer Menu
 - [x] Bottom Navigation Bar
-- [] Lazy Column
+- [x] Lazy Column
 - [] Floating Action Button
 - [] Dialogs - (Account Dialog)
