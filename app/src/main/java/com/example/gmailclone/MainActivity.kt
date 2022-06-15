@@ -3,6 +3,7 @@ package com.example.gmailclone
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
@@ -11,6 +12,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.gmailclone.components.GmailDrawerMenu
 import com.example.gmailclone.components.HomeAppBar
 import com.example.gmailclone.components.HomeBottomMenu
+import com.example.gmailclone.components.MailListItems
 import com.example.gmailclone.ui.theme.GmailCloneTheme
 
 class MainActivity : ComponentActivity() {
@@ -43,6 +45,7 @@ fun GmailApp() {
         bottomBar = { HomeBottomMenu() }
     ){
 
+        MailListItems(it)
     }
 }
 
