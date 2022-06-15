@@ -5,7 +5,7 @@
 ### Modules
 - [x] AppBar Menu
 - [x] Drawer Menu
-- [] Bottom Navigation Bar
+- [x] Bottom Navigation Bar
 - [] Lazy Column
 - [] Floating Action Button
 - [] Dialogs - (Account Dialog)
