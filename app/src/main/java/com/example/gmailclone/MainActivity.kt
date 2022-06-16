@@ -7,12 +7,11 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.gmailclone.components.GmailDrawerMenu
-import com.example.gmailclone.components.HomeAppBar
-import com.example.gmailclone.components.HomeBottomMenu
-import com.example.gmailclone.components.MailListItems
+import com.example.gmailclone.components.*
 import com.example.gmailclone.ui.theme.GmailCloneTheme
 
 class MainActivity : ComponentActivity() {
@@ -35,17 +34,23 @@ fun GmailApp() {
     val scaffoldState = rememberScaffoldState()
     val coroutineScope = rememberCoroutineScope()
     val scrollState = rememberScrollState()
+    val openDialog = remember{
+        mutableStateOf(false)
+    }
 
     Scaffold(
         scaffoldState = scaffoldState,
-        topBar = { HomeAppBar(scaffoldState, coroutineScope)},
+        topBar = {
+            HomeAppBar(scaffoldState, coroutineScope, openDialog)
+         },
         drawerContent = {
             GmailDrawerMenu(scrollState)
         },
-        bottomBar = { HomeBottomMenu() }
+        bottomBar = { HomeBottomMenu() },
+        floatingActionButton = { GmailFAB(scrollState) }
     ){
 
-        MailListItems(it)
+        MailListItems(it, scrollState)
     }
 }
 
