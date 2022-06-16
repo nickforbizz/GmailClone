@@ -7,5 +7,5 @@
 - [x] Drawer Menu
 - [x] Bottom Navigation Bar
 - [x] Lazy Column
-- [] Floating Action Button
+- [x] Floating Action Button
 - [] Dialogs - (Account Dialog)
