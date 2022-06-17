@@ -8,4 +8,4 @@
 - [x] Bottom Navigation Bar
 - [x] Lazy Column
 - [x] Floating Action Button
-- [] Dialogs - (Account Dialog)
+- [x] Dialogs - (Account Dialog)
