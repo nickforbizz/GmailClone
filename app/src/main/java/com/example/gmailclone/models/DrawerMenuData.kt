@@ -11,7 +11,7 @@ sealed class DrawerMenuData (
     val isHeader: Boolean = false
         ){
 
-    //Todo 12 We create an object for easy access to each of the item
+
     object AllInboxes: DrawerMenuData(
         icon = Icons.Outlined.AllInbox,
         title = "All inboxes"
