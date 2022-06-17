@@ -1,6 +1,23 @@
 package com.example.gmailclone
 
+import com.example.gmailclone.models.GmailDialogData
 import com.example.gmailclone.models.MailData
+
+
+val otherMailsData = listOf(
+    GmailDialogData(
+        id=1,
+        name = "Jamila Ole",
+        myEmailText = "jamilaole@gmail.com",
+        emailCount = 23
+    ),
+    GmailDialogData(
+        id=2,
+        name = "Hez Kiminda",
+        myEmailText = "hkiminda@gmail.com",
+        emailCount = 123
+    )
+)
 
 
 
@@ -72,6 +89,48 @@ val mailListData = listOf(
         id = 10,
         username = "Jobs",
         subject = "New opportunity that suits you",
+        body = "We have an opening that suits your profile kindly check it out and indicate your interest",
+        timestamp = "20:10"
+    ),
+    MailData(
+        id = 11,
+        username = "Jamila",
+        subject = "A request for loving you",
+        body = "This is a follow up email about the partnership request",
+        timestamp = "20:23"
+    ),
+    MailData(
+        id = 12,
+        username = "Tesla",
+        subject = "Your account has been deleted",
+        body = "If you did not sign in with a new device then go to settings and reset your password",
+        timestamp = "20:41"
+    ),
+    MailData(
+        id = 13,
+        username = "Foody",
+        subject = "New opportunity that suits your needs",
+        body = "We have an opening that suits your profile kindly check it out and indicate your interest",
+        timestamp = "20:10"
+    ),
+    MailData(
+        id = 14,
+        username = "Kemri",
+        subject = "A request for partnership in jod",
+        body = "This is a follow up email about the partnership request",
+        timestamp = "20:50"
+    ),
+    MailData(
+        id = 15,
+        username = "Apple",
+        subject = "Your phone is secure",
+        body = "If you did not sign in with a new device then go to settings and reset your password",
+        timestamp = "20:10"
+    ),
+    MailData(
+        id = 16,
+        username = "Drinks",
+        subject = "Drink and drive",
         body = "We have an opening that suits your profile kindly check it out and indicate your interest",
         timestamp = "20:10"
     )
